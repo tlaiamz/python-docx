@@ -58,6 +58,9 @@ class DescribeCoreProperties(object):
         ('last_printed', datetime(2014,  6,  4,  4, 28)),
         ('modified',     None),
     ])
+    
+    
+    
     def date_prop_get_fixture(self, request, core_properties):
         prop_name, expected_datetime = request.param
         return core_properties, prop_name, expected_datetime
