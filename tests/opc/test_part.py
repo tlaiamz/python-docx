@@ -294,7 +294,7 @@ class DescribePartFactory(object):
         CustomPartClass_.load.assert_called_once_with(
             partname, content_type, blob, package
         )
-        assert part is part_of_custom_type_
+        assert part == part_of_custom_type_
 
     def it_constructs_custom_part_type_for_registered_content_types(
             self, part_args_, CustomPartClass_, part_of_custom_type_):
