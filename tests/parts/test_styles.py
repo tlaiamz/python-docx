@@ -23,7 +23,7 @@ class DescribeStylesPart(object):
         styles_part, Styles_, styles_ = styles_fixture
         styles = styles_part.styles
         Styles_.assert_called_once_with(styles_part.element)
-        assert styles is styles_
+        assert styles == styles_
 
     def it_can_construct_a_default_styles_part_to_help(self):
         package = OpcPackage()
