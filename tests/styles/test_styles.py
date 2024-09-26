@@ -22,7 +22,7 @@ class DescribeStyles(object):
 
     def it_supports_the_in_operator_on_style_name(self, in_fixture):
         styles, name, expected_value = in_fixture
-        assert (name in styles) is expected_value
+        assert (name in styles) == expected_value
 
     def it_knows_its_length(self, len_fixture):
         styles, expected_value = len_fixture
